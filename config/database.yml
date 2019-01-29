@@ -84,6 +84,6 @@ test:
 #
 production:
   <<: *default
-  database: d6hnaakos7kqia
-  username: pkacmdguhfnxmn
-  password: 253c8f7bfb0b536a9158d4e08f3a0c3f6118ce10550af1091ec7c68cc95b6d0d
+  database: sample_app_production
+  username: ricar
+  password: 16101951
