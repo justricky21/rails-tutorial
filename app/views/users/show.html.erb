@@ -1,0 +1,19 @@
+<%= provide(:title, @user.name) %>
+
+<div class="row">
+    <aside class="col-md-4">
+        <section class="user_info">
+            <h1>
+                <%= gravatar_for @user %>
+                <%= @user.name %>
+            </h1>
+        </section>
+    </aside>
+</div>
+
+
+<p> Today is <%= Time.now.strftime("%d/%m/%Y") %>.
+User <%= @user.name %>, with e-mail <%= @user.email %>, was created on 
+<%= @user.created_at.strftime("%d/%m/%Y") %><%=  %><%=  %><%=  %><%=  %>, and was last modified on 
+<%= @user.updated_at.strftime("%d/%m/%Y") %>.
+</p>
