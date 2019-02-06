@@ -71,4 +71,8 @@ class UserTest < ActiveSupport::TestCase
     assert_not @user1.valid?
   end
 
+  test "authenticated? should return false for a user with not nil digest" do
+    assert_not @user1.authenticated?('')
+  end
+
 end
